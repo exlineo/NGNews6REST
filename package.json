@@ -1,0 +1,33 @@
+{
+  "name": "ngnews6rest",
+  "version": "0.1.0",
+  "description": "Application REST Node/MongoDB pour le projet Angular NGNews6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Erreur : pas de test spécifié\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exlineo/NGNews6REST.git"
+  },
+  "keywords": [
+    "Node",
+    "MongoDB",
+    "Angular6",
+    "RESTFul"
+  ],
+  "author": "exlineo / Gérald Abbadie",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/exlineo/NGNews6REST/issues"
+  },
+  "homepage": "https://github.com/exlineo/NGNews6REST#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.1.3"
+  }
+}
