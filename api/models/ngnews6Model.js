@@ -3,12 +3,20 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var TaskSchema = new Schema({
-  name: {
+var NewsSchema = new Schema({
+  titre: {
     type: String,
-    required: 'Merci de saisir la nom de la tâche'
+    required: 'Merci de saisir le titre de la news'
   },
-  Created_date: {
+  description: {
+    type: String,
+    default: 'Description'
+  },
+  image: {
+    type: String,
+    default: ''
+  },
+  created_date: {
     type: Date,
     default: Date.now
   },
@@ -21,4 +29,4 @@ var TaskSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('news', NewsSchema);
